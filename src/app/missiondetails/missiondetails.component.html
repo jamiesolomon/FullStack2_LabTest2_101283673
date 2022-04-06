@@ -1,0 +1,27 @@
+
+
+<div *ngIf="data">
+    
+
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{data.mission_name}}</mat-card-title>
+          <mat-card-subtitle>{{data.launch_year}}</mat-card-subtitle>
+        </mat-card-header>
+        <img src="{{data.links.mission_patch_small}}" alt="Rocket Photo" width="120px">
+        <mat-card-content>
+          <p>
+            {{data.details}}
+          </p>
+          <p>
+              Rocket Name: {{data.rocket.rocket_name}}
+              <br/>
+              Rocket Type: {{data.rocket.rocket_type}}
+          </p>
+        </mat-card-content>
+        
+      </mat-card>
+      
+
+</div>

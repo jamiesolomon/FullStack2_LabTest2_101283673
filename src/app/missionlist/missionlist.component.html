@@ -1,0 +1,20 @@
+
+
+<mat-card class="example-card" *ngFor="let data of dataArray">
+    <mat-card-header>
+      
+      <mat-card-title>{{data.mission_name}}</mat-card-title>
+      <img src="{{data.links.mission_patch_small}}" alt="Mission photo" width="60px">
+      <mat-card-subtitle>{{data.launch_year}}</mat-card-subtitle>
+    </mat-card-header>
+    
+    <mat-card-content>
+      <p>
+        {{data.details}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="details(data)">Details</button>
+    </mat-card-actions>
+  </mat-card>
+  
